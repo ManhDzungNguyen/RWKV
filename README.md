@@ -6,3 +6,25 @@ However, I do not recommend using this method if you do not have significant res
 This repository has 2 branches:
 - The `main` branch implements training and inference code using the transformers library from HuggingFace.
 - The `symato` branch deploys the training and inference code based on the git repository: https://github.com/telexyz/symato with some bug fixes.
+
+RWKV preprint: https://arxiv.org/abs/2305.13048
+
+## Training
+To train, please run ./train.sh (requires a GPU).
+
+Here's an overview of the different files in the `rwkv-v4neo`:
+
+`dataset.py`: This file is responsible for loading and preparing the training data in the (x, y) format:
+    x represents the input token sequence.
+    y represents the next token after x.
+
+`model.py`: This file contains the implementation of the RWKV-V4NEO model.
+
+`trainer.py`: This file includes the steps for data preparation, model adjustment, and saving/loading model parameters.
+
+`train.py`: This file contains various training scenarios.
+
+`wkv_cuda.*`: These files implement CUDA operations to accelerate computations for time-mixing (also known as linear attention).
+
+## Inference
+To infer, please run ./infer.sh (requires a GPU).
