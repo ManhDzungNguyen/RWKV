@@ -6,3 +6,8 @@ However, I do not recommend using this method if you do not have significant res
 This repository has 2 branches:
 - The `main` branch implements training and inference code using the transformers library from HuggingFace.
 - The `symato` branch deploys the training and inference code based on the git repository: https://github.com/telexyz/symato with some bug fixes.
+
+RWKV preprint: https://arxiv.org/abs/2305.13048
+
+## Training and Inference
+To train, please run ./train.sh (requires a GPU).
