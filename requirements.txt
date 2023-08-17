@@ -1,0 +1,9 @@
+pandas
+underthesea
+py_vncorenlp
+transformers[torch]
+datasets
+evaluate
+xformers
+jupyter
+cachetools

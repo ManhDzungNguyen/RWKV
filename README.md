@@ -9,5 +9,13 @@ This repository has 2 branches:
 
 RWKV preprint: https://arxiv.org/abs/2305.13048
 
+# Setup
+- `python3.8 -m venv venv`
+- `pip install --upgrade pip`
+- `pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113`
+- `pip install -r requirements.txt`
+- `python setup.py`
+
 ## Training and Inference
-To train, please run ./train.sh (requires a GPU).
+To train, please run ./pretrain/train.sh (requires a GPU).
+To infer, please run ./pretrain/infer.py
